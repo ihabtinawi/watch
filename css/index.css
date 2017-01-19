@@ -17,7 +17,6 @@
   height: 100%;
   display: flex;
   /* left: 10%; */
-  border-radius: 50%;
   background-color: white; }
 
 .face {
@@ -26,34 +25,32 @@
   height: 98%;
   display: block;
   /* left: 10%; */
-  border-radius: 50%;
   /* background-color: white; */
   left: 1%;
   top: 1%; }
 
 .second {
+  display: block;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
   background-color: red;
   position: relative;
   /* top: 10%; */
   left: 50%; }
 
 .min {
+  display: block;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
   background-color: blue;
   position: relative;
-  left: 50%; }
+  left: 49.3%; }
 
 .hour {
   width: 25px;
   height: 25px;
-  border-radius: 50%;
   background-color: yellow;
   position: relative;
-  left: 50%; }
+  left: 49%; }
 
 /*# sourceMappingURL=index.css.map */
