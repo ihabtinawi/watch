@@ -37,6 +37,10 @@
   position: relative;
   /* top: 10%; */
   left: 50%; }
+  .second .digital-sec {
+    font-size: 0.9rem;
+    color: white;
+    background-color: red; }
 
 .min {
   display: block;
@@ -45,6 +49,9 @@
   background-color: blue;
   position: relative;
   left: 49.3%; }
+  .min .digital-min {
+    font-size: 0.9rem;
+    color: white; }
 
 .hour {
   width: 25px;
@@ -52,5 +59,8 @@
   background-color: yellow;
   position: relative;
   left: 49%; }
+  .hour .digital-hour {
+    font-size: 0.9rem;
+    color: white; }
 
 /*# sourceMappingURL=index.css.map */

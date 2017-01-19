@@ -1,3 +1,4 @@
+$fontsize: 0.9rem;
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +41,11 @@
   position: relative;
   /* top: 10%; */
   left: 50% ;
+  .digital-sec {
+    font-size: $fontsize;
+    color: white;
+    background-color: red;
+  }
 
 }
 .min {
@@ -50,6 +56,10 @@
   background-color:  blue;
   position: relative;
   left: 49.3%;
+  .digital-min {
+    font-size: $fontsize;
+    color: white;
+  }
 }
 .hour {
   width: 25px;
@@ -58,4 +68,8 @@
   background-color: yellow;
   position: relative;
   left: 49%;
+  .digital-hour {
+    font-size: $fontsize;
+    color: white;
+  }
 }
