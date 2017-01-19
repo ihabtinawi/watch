@@ -33,8 +33,5 @@ $(function (){
           break;
     }
   }
-  for (i = 0 ; i< 12 ; i++ ) {
-    setTimeout(setLeftPos(i+1) ,1000);
-  }
 
 });
