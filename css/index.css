@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black; }
+
+.borderwhite {
+  border: solid 1px white; }
+
+.maindiv {
+  position: relative;
+  width: 70%;
+  height: 500px; }
+
+.circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* left: 10%; */
+  border-radius: 50%;
+  background-color: white; }
+
+.face {
+  position: relative;
+  width: 98%;
+  height: 98%;
+  display: block;
+  /* left: 10%; */
+  border-radius: 50%;
+  /* background-color: white; */
+  left: 1%;
+  top: 1%; }
+
+.second {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  /* top: 10%; */
+  left: 50%; }
+
+.min {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: relative;
+  left: 50%; }
+
+.hour {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: relative;
+  left: 50%; }
+
+/*# sourceMappingURL=index.css.map */
