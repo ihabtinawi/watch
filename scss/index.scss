@@ -1,12 +1,22 @@
-$fontsize: 0.9rem;
+$fontsize: 0.5rem;
 * {
   margin: 0;
   padding: 0;
   background-color: black ;
 }
 .borderwhite {
-  border: solid 1px white ;
+//  border: solid 1px white ;
 }
+.borderred {
+  border: solid 1px red;
+}
+.borderblue {
+  border: solid 1px blue ;
+}
+.borderyellow {
+  border: solid 1px yellow;
+}
+
 .maindiv {
   position: relative;
   width: 70%;
@@ -32,6 +42,36 @@ $fontsize: 0.9rem;
       left: 1%;
       top: 1%;
 }
+.secface {
+  position: relative;
+  border-radius: 50%;
+  width: 94%;
+  height: 94%;
+  display: block;
+  left: 2%;
+  top: 2%;
+  box-sizing: border-box;
+}
+
+.minface {
+  position: relative;
+  border-radius: 50%;
+  width: 74%;
+  height: 74%;
+  display: block;
+  left: 13%;
+  top: 10%;
+}
+.hourface {
+  position: relative;
+  border-radius: 50%;
+  width: 74%;
+  height: 74%;
+  display: block;
+  left: 13%;
+  top: 6%;
+}
+
 .second {
   display: block;
   width: 10px;
@@ -45,6 +85,7 @@ $fontsize: 0.9rem;
     font-size: $fontsize;
     color: white;
     background-color: red;
+    z-index: 1;
   }
 
 }
@@ -59,9 +100,12 @@ $fontsize: 0.9rem;
   .digital-min {
     font-size: $fontsize;
     color: white;
+    background-color: blue;
+    z-index: 2;
   }
 }
 .hour {
+  display: block;
   width: 25px;
   height: 25px;
 //  border-radius: 50%;
@@ -70,6 +114,9 @@ $fontsize: 0.9rem;
   left: 49%;
   .digital-hour {
     font-size: $fontsize;
-    color: white;
+    color: darkgreen;
+    background-color: yellow;
+    text-align: center;
+    z-index: 3;
   }
 }
