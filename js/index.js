@@ -27,18 +27,18 @@ $(function (){
   function setPos(div, value){
     switch (div) {
       case "second":
-          $(".second").css("top",0.5* $(".face").height() - Math.cos(value) * $(".face").height()/2 + "px");
-          $(".second").css("left",0.5* $(".face").width() - Math.sin(value) * $(".face").width()/2 + "px");
-          $(".digital-sec").text(1+Math.sin(value)+"");
+          $(".second").css("top",0.5* $(".face").height() - Math.cos(-value) * $(".face").height()/2 + "px");
+          $(".second").css("left",0.5* $(".face").width() - Math.sin(-value) * $(".face").width()/2 + "px");
+//          $(".digital-sec").text(1+Math.sin(value)+"");
           break;
       case "minute":
-          $(".min").css("left", 0.5* $(".face").width() - Math.sin(value) * $(".face").width()/2 + "px");
-          $(".min").css("top", 0.5* $(".face").height() - Math.cos(value) * $(".face").height()/2 + "px");
+          $(".min").css("left", 0.5* $(".face").width() - Math.sin(-value) * $(".face").width()/2 + "px");
+          $(".min").css("top", 0.5* $(".face").height() - Math.cos(-value) * $(".face").height()/2 + "px");
   ///        $(".digital-min").text(value+"");
           break;
       case "hour":
-          $(".hour").css("left",0.5* $(".face").width() - Math.sin(value) * $(".face").width()/2 + "px");
-          $(".hour").css("top", 0.5* $(".face").height() - Math.cos(value) * $(".face").height()/2 + "px");
+          $(".hour").css("left",0.5* $(".face").width() - Math.sin(-value) * $(".face").width()/2 + "px");
+          $(".hour").css("top", 0.5* $(".face").height() - Math.cos(-value) * $(".face").height()/2 + "px");
     //      $(".digital-hour").text(value+"");
           break;
     }
