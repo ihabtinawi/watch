@@ -1,7 +1,8 @@
 $(function (){
+  var ratio= 0.25;
   function getwindowsize () {
-    $(".maindiv").css("height",0.25 * $(window).height()+"");
-    $(".maindiv").css("width",0.25 * $(window).width()+"");
+    $(".maindiv").css("height",ratio * $(window).height()+"");
+    $(".maindiv").css("width",ratio * $(window).width()+"");
   }
   getwindowsize();
   setInterval(drawTime, 1000);
@@ -32,8 +33,8 @@ $(function (){
   function setPos(div, value){
     switch (div) {
       case "second":
-          $(".second").css("top",0.5* $(".secface").height() - Math.cos(-value) * $(".secface").height()/2 + "px");
           $(".second").css("left",0.5* $(".secface").width() - Math.sin(-value) * $(".secface").width()/2 + "px");
+          $(".second").css("top",0.5* $(".secface").height() - Math.cos(-value) * $(".secface").height()/2 + "px");
 //          $(".digital-sec").text(1+Math.sin(value)+"");
           break;
       case "minute":
