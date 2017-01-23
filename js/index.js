@@ -1,5 +1,5 @@
 $(function (){
-  var ratio= 0.25;
+  var ratio= 1;
   function getwindowsize () {
     $(".maindiv").css("height",ratio * $(window).height()+"");
     $(".maindiv").css("width",ratio * $(window).width()+"");
@@ -27,7 +27,7 @@ $(function (){
     minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
     setPos("minute",minute);
     // second
-    setPos("second", second);
+    setPos("second", second*Math.PI/(30));
 }
 
   function setPos(div, value){
@@ -35,7 +35,7 @@ $(function (){
       case "second":
           $(".second").css("left",0.5* $(".secface").width() - Math.sin(-value) * $(".secface").width()/2 + "px");
           $(".second").css("top",0.5* $(".secface").height() - Math.cos(-value) * $(".secface").height()/2 + "px");
-//          $(".digital-sec").text(1+Math.sin(value)+"");
+//          $(".digital-sec").text(Math.sin(-value)+"");
           break;
       case "minute":
           $(".min").css("left", 0.5* $(".minface").width() - Math.sin(-value) * $(".minface").width()/2 + "px");
