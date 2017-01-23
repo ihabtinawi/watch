@@ -1,5 +1,5 @@
 $(function (){
-  var ratio= .25;
+  var ratio= .5;
   var secondwidth = 10;
   var secondheight= 10;
   function getwindowsize () {
@@ -41,8 +41,8 @@ $(function (){
   function setPos(div, value){
     switch (div) {
       case "second":
-          $(".second").css("left",0.5* $(".secface").width() - Math.sin(-value) * $(".secface").width()/2 + "px");
-          $(".second").css("top",0.5* $(".secface").height() - Math.cos(-value) * $(".secface").height()/2 + "px");
+          $(".second").css("left",0.5* $(".secface").width()-$(".second").width() - Math.sin(-value) * $(".secface").width()/2 + "px");
+          $(".second").css("top",0.5* $(".secface").height()-$(".second").height() - Math.cos(-value) * $(".secface").height()/2 + "px");
 //          $(".digital-sec").text(Math.sin(-value)+"");
           break;
       case "minute":
