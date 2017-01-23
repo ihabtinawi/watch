@@ -1,8 +1,16 @@
 $(function (){
-  var ratio= 1;
+  var ratio= .25;
+  var secondwidth = 10;
+  var secondheight= 10;
   function getwindowsize () {
     $(".maindiv").css("height",ratio * $(window).height()+"");
     $(".maindiv").css("width",ratio * $(window).width()+"");
+    $(".second").css("width", ratio * secondwidth);
+    $(".second").css("height", ratio * secondwidth);
+    $(".min").css("width", ratio * (secondwidth+10));
+    $(".min").css("height", ratio * (secondwidth+10));
+    $(".hour").css("width", ratio * (secondwidth+15));
+    $(".hour").css("height", ratio * (secondwidth+15));
   }
   getwindowsize();
   setInterval(drawTime, 1000);
